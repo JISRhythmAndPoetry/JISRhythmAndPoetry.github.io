@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/ico" href="img/rapicon.ico">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <meta charset="utf-8">
+  <title>R.A.P - Songs and Lyrics</title>
+</head>
+<body>
+  <header>
+    <br>
+    <img src="img/RAP_blackback.png" style="width:12%; float:left; margin-left:10%;">
+    <!--<h1>Rhythm and Poetry</h1>-->
+    <br>
+    <nav style="text-align:left; font-size:90%;">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <div class="dropdown">
+        <a href="topics.html"><button class="dropbtn">Topics</button></a>
+        <div class="dropdown-content">
+          <a href="topics/current.html">Current</a>
+          <a href="topics/suggest.html">Suggest</a>
+        </div>
+      </div>
+      <a href="songs.html" style="background-color:#393939;">Songs</a>
+      <a href="signup.html">Sign Up!</a>
+    </nav>
+  </header>
+
+  <main>
+    <hr>
+    <h1 style="padding:0;margin-top:-2%;">Songs List</h1>
+    <h4 style="margin-top:-7%;">The Songs we Analyse and their Lyrics</h4>
+    <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Athemangoegg%3Aplaylist%3A489Bq91DPxXWS27knBfbK8" width="300" height="380" frameborder="0" allowtransparency="true" style="display:inline;"></iframe>
+    <div type="float:right;">
+      <!--<iframe target="_blank" src="https://docs.google.com/document/d/1ajJuyr25Hse8FdT1IzO8GPKpFXfreZYYUBHDwL3pVq0/pub?embedded=true" width="80%" height="380" frameborder="0" style="float:right;display:inline;margin-top:-35%;"></iframe></div>
+-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+      <iframe srcdoc="" frameborder="0" width="70%" height="420" frameborder="0" style="float:right;display:inline;margin-top:-35%;"></iframe>
+
+      <script>
+          $(function() {
+              $.get("https://docs.google.com/document/d/1ajJuyr25Hse8FdT1IzO8GPKpFXfreZYYUBHDwL3pVq0/pub?embedded=true", function(html) {
+                  var contents = $("iframe").contents();
+
+                  contents.find("html").html(html);
+
+                  setTimeout(function() {
+                      contents.find('a[href^="http://"]').attr("target", "_blank");
+                      contents.find('a[href^="https://"]').attr("target", "_blank");
+                  }, 1000); // Actually not sure if timeout is required here...
+              });
+          });
+      </script>
+
+    <br>
+    <br>
+<hr>
+    <footer style="text-align:center;background-color:black;padding-top:2%;padding-bottom:2%;">
+      <!--Copyright (c) 2016 Jakarta Intercultural School All Rights Reserved.-->
+      Website created by Xavier Travers.
+    </footer>
+  </main>
+
+</body>
+</html>
