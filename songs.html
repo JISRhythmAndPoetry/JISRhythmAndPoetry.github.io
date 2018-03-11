@@ -51,7 +51,6 @@
                 var contents = $("iframe").contents();
 
            contents.find("html").html(html);
-           print(",,,")
            setTimeout(function() {
                contents.find('a[href^="http://"]').attr("target", "_blank");
                contents.find('a[href^="https://"]').attr("target", "_blank");
