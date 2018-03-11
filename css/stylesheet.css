@@ -36,7 +36,7 @@ footer{
 }
 
 h1{
-  font-size: 900%;
+  font-size: 800%;
   text-align: center;
   padding: 0;
   z-index: 2;
@@ -47,14 +47,16 @@ h2{}
 h3{}
 
 h4{
-  font-size: 300%;
+  font-size: 250%;
   text-align: center;
   padding: 0;
+  padding-top: 15px;
   z-index: 2;
 }
 
 h5{
   text-align: center;
+  padding-top: 15px;
   font-size: 150%;
   z-index: 2;
 }
